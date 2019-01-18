@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    
+
+        <% if (blog.length > 0) { %>
+            <% for (var i = 0; i< blog.length; i++) { %>
+                <h1><%= blog[i].title  %></h1>
+                <h1><%= blog[i].fname  %></h1>
+                <h1><%= blog[i].lname  %></h1>
+                <h2><%= blog[i].author %> <%= blog[i].publish_date %></h2>
+                <h3><%= blog[i].body  %></h3>
+                <img src="<%= blog[i].img_path %>" alt="" width="50px" hieght="50px">
+                <br>
+            <% }%>
+        <% }%>
+
+</body>
+</html>
